@@ -1,0 +1,12 @@
+apiVesion: v1
+kind: Pod
+metadata:
+  name:apache2pod
+spec:
+  containers:
+    - name: apache2pod
+      image: "ubuntu/apache2:2.4-22.04_beta"
+      ports:
+        - name: http 
+          containerport: 8080
+          protocal: tcp
